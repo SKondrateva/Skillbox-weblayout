@@ -12,7 +12,7 @@
 
 @media (max-width: 1440px) {
   .nav-header__list {
-    min-width: 790px;
+    width: 100%;
     justify-content: space-between;
   }
   .nav-header__list-item:not(:last-child) {
@@ -29,6 +29,9 @@
 
   .slider__text {
     margin-bottom: 50px;
+  }
+  .about-us__card {
+    flex-wrap: wrap;
   }
   .about-us__text {
     max-width: 100%;
@@ -77,11 +80,38 @@
   }
 
   .nav-header {
-    display: none;
+    align-items:flex-start;
+    position: fixed;
+    left: 0;
+    top: 68px;
+    z-index: 1000;
+    overflow-y: auto;
+    min-width: 420px;
+    height: 700px;
+    background-color: var(--color-white);
+    padding: 100px 0 30px 30px;
+    transform:  translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+  }
+  .nav-header-visible {
+    transform: none;
+  }
+  .nav-header__list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+    min-width: 100%;
+  }
+  .nav-header__list-item {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .nav-header__list-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 60px;
   }
 
   .slider {
-    background-image: url(../img/balcony1024.jpg);
     padding: 160px 77px;
   }
 
@@ -132,12 +162,14 @@
     margin-right: 0;
     margin-bottom: 32px;
   }
+  .about-us__card {
+    flex-wrap: nowrap;
+  }
 
   .about-us__card-two,
   .about-us__card-three {
-    background-position: 75px 63px;
     max-width: 924px;
-    padding: 62px 125px 64px 317px;
+    padding: 63px 125px 62px 77px;
   }
 
   .about-us__card-two {
@@ -238,6 +270,9 @@
 }
 
 @media (max-width: 992px) {
+  .container{
+    padding: 0 50px;
+  }
   .header-page__logo-evklid {
     padding-right: 5px;
   }
@@ -250,6 +285,9 @@
 
   .slider {
     padding: 160px 40px;
+  }
+  .slider-section .swiper {
+    width: calc(100% - 100px);
   }
 
   .footer__section {
@@ -272,7 +310,11 @@
 
 @media (max-width: 768px) {
   .container {
+    padding: 0 15px;
     max-width: 698px;
+  }
+  .nav-header {
+    height: 663px;
   }
   .text {
     font-size: 18px;
@@ -283,8 +325,10 @@
     font-size: 50px;
   }
   .slider {
-    background-image: url(../img/balcony768.jpg);
     padding: 160px 40px;
+  }
+  .slider-section .swiper {
+    width: calc(100% - 30px);
   }
 
   .header-page {
@@ -347,19 +391,15 @@
   }
 
   .about-us__card-two {
-    background-image: url(../img/about-us768.svg);
     margin-bottom: 30px;
   }
-
-  .about-us__card-three {
-    background-image: url(../img/about-us768-2.svg);
+  .about-us__img {
+    margin-right: 16px;
   }
-
   .about-us__card-two,
   .about-us__card-three {
-    background-position: 40px 68px;
     max-width: 668px;
-    padding: 32px 40px 35px 170px;
+    padding: 33px 40px 32px 40px;
   }
 
   .about-us__card-text {
@@ -419,11 +459,30 @@
 }
 
 @media (max-width: 576px) {
+  .search--open {
+    padding: 0;
+  }
+  .search {
+    padding: 6px 15px 6px 15px;
+    box-shadow: none;
+  }
   .header-page {
     padding-top: 16px;
     padding-bottom: 14px;
   }
-
+  .nav-header {
+    padding: 32px 0 30px 15px;
+    min-width: 320px;
+    height: 309px;
+  }
+  .nav-header__list-item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .nav-header__list-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
   .text {
     font-size: 14px;
     line-height: 28px;
@@ -448,7 +507,6 @@
   .slider {
     display: flex;
     flex-direction: column;
-    background-image: url(../img/balcony320.jpg);
     padding: 60px 21px;
   }
 
@@ -487,6 +545,13 @@
     margin-bottom: 60px;
   }
 
+  .about-us__card {
+    flex-wrap: wrap;
+  }
+  .about-us__pic {
+    margin-bottom: 13px;
+  }
+
   .about-us__card-one {
     display: block;
     background-image: url(../img/builder320.png);
@@ -498,14 +563,6 @@
     min-height: 100%;
   }
 
-  .about-us__card-two {
-    background-image: url(../img/Frame320-2.svg);
-  }
-
-  .about-us__card-three {
-    background-image: url(../img/Frame320.svg);
-  }
-
   .about-us__card-heading {
     margin-bottom: 5px;
   }
@@ -513,8 +570,7 @@
   .about-us__card-two,
   .about-us__card-three {
     border: none;
-    padding: 62px 0 0 0;
-    background-position: 0 0;
+    padding: 0;
     max-width: 100%;
   }
 
