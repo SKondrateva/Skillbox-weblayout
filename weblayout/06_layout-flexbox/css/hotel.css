@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+html {
+  font-family: sans-serif;
+  background-color: #e5e5e5;
+}
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.main-info {
+  display: flex;
+  align-items: center;
+  min-width: 1170px;
+}
+.logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+.header-contacts {
+  margin-left: 40px;
+  width: 164px;
+}
+.authorisation{
+margin-left: auto;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 743px;
+  height: 70px;
+}
+.nav-list{
+display: flex;
+}
+.nav-list-item{
+  margin-right: 45px;
+}
+.button-header {
+  display: flex;
+  align-items: flex-end;
+  width: 426px;
+  height: 50px;
+}
+.btn-1{
+margin-left: 57px;
+margin-right: 45px;
+}
+.btn-2{
+  margin-right: 45px;
+}
+
+.section-offer {
+ display: flex;
+ max-width: 1170px;
+ margin: 0 auto;
+ flex-wrap: wrap;
+}
+.section-heading{
+ width: 1170px;
+}
+.section-offer-list{
+  display: flex;
+  flex-direction: column;
+}
+.section-offer-block-aside{
+  display: flex;
+  margin-left: 300px;
+}
+.section-offer-list-aside{
+  display: flex;
+}
+.section-about-us{
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.section-service{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.section-service-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-service-list-item{
+max-width: 573px;
+height: 165px;
+}
+.section-advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-advantages-list-item{
+  max-width: 275px;
+  height: 275px;
+}
+.section-place{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.section-place-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-place-list-item{
+  max-width: 374px;
+  height: 440px;
+}
+.section-place-list-item-more{
+  min-width: 373px;
+  height: 440px;
+}
