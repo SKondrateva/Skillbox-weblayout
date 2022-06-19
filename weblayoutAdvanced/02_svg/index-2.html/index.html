@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+    <style>
+    .body{
+        font-family: 'Open-Sans', sans-serif;
+    }
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 58px;
+    }
+    .accent-color {
+        color: #FF7A00;
+    }
+        .icon {
+            max-width: 100%;
+            width: 375px;
+            height: 288px;
+            margin-bottom: 21px;
+        }
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+        .top {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff6ed;
+            padding-bottom: 45px;            
+        }
+        .cards {
+            display: flex;
+            justify-content: space-between;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 375px;
+            max-width: 100%;
+        }
+        .card:not(:last-child) {
+            margin-right: 100px;
+        }
+        .title {
+            margin: 0;
+            padding-top: 60px;
+            font-size: 40px;
+            line-height: 54px;
+            font-weight: 700;
+        }
+        .work {
+            padding-bottom: 40px;
+            align-self: center; 
+        }
+        .intergation {
+            padding-bottom: 11px;
+        }
+        .subtitle {
+            margin: 0;
+            margin-bottom: 6px;
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 700;
+        }
+        .text {
+            margin: 0;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+        }
+        .bottom {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+        }
+        .info {
+            max-width: 50%;
+        }
+        .logos {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 93px;
+            width: 550px;
+            max-width: 100%;
+        }
+        .bg {
+            position: absolute;
+            align-self: flex-start;
+            padding-top: 370px;
+            padding-left: 780px;
+            width: 550px;
+            height: 550px;
+            z-index: 1;
+        }
+        .block-one {
+            display: flex;
+            z-index: 2;
+            margin-bottom: 30px;
+        }
+        .block-two {
+            display: flex;
+            z-index: 2;
+        }
+        .logo {
+            margin-right: 90px;
+        }
+        .logo:last-of-type {
+            margin-right: 0;
+        }
+
+    </style>
+</head>
+
+<body class="body">
+    <div>
+        <div class="container top">
+            <h1 class="title work">Как все работает?</h1>
+            <div class="cards">
+                <div class="card">
+                    <svg class="icon">
+                        <use xlink:href="sprite.svg#coffee"></use>
+                      </svg>
+                    <div>
+                        <h2 class="subtitle">Утренний <span class="accent-color">кофе</span></h2>
+                        <p class="text">Кофеин воздействует на центральную нервную систему как природный “будильник”. Поэтому мы быстрее просыпаемся.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg class="icon">
+                        <use xlink:href="sprite.svg#meditating"></use>
+                      </svg>
+                    <div>
+                        <h2 class="subtitle">Час <span class="accent-color">медитации</span></h2>
+                        <p class="text">После практик оба полушария мозга начинают работать сбалансированно — это привносит порядок в вашу жизнь.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg class="icon">
+                        <use xlink:href="sprite.svg#sprinting"></use>
+                      </svg>
+                    <div>
+                        <h2 class="subtitle">Вперёд к <span class="accent-color">свершениям!</span></h2>
+                        <p class="text">Ресурсы каждого человека ограничены, поэтому нам необходимо беречь себя и вовремя останавливаться.</p>
+                    </div>
+                </div>
+                <svg class="bg">
+                    <use xlink:href="sprite.svg#ellipse"></use>
+                  </svg>
+            </div>
+        </div>
+        <div class="container bottom">
+            <div class="info">
+                <h1 class="title intergration">Интеграция со сторонними сервисами</h1>
+                <p class="text">Поможет всегда оставаться в курсе всех событий, быть максимально эффективным на протяжении всего рабочего дня, контролировать свои задачи и не опоздать на запланированные встречи.</p>
+            </div>
+            <div class="logos">
+                <div class="block-one">
+                    <svg class="logo">
+                        <use xlink:href="sprite.svg#fb"></use>
+                      </svg>
+                      <svg class="logo">
+                        <use xlink:href="sprite.svg#trello"></use>
+                      </svg>
+                      <svg class="logo">
+                        <use xlink:href="sprite.svg#worklio"></use>
+                      </svg>
+                      <svg class="logo">
+                        <use xlink:href="sprite.svg#dropbox"></use>
+                      </svg> 
+                </div>
+                <div class="block-two">
+                    <svg class="logo">
+                        <use xlink:href="sprite.svg#google"></use>
+                      </svg>
+                      <svg class="logo">
+                        <use xlink:href="sprite.svg#trello-plain2"></use>
+                      </svg>
+                      <svg class="logo">
+                        <use xlink:href="sprite.svg#slack"></use>
+                      </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
